@@ -16,9 +16,22 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
-        OnSelect: |+
+        OnSelect: |
             =Set(BY,Value(Dropdown1.SelectedText.Value));
             Set(AR, Value(TextInput3.Text));
+            Patch(LostProfit, Defaults(LostProfit), {
+            AdressableRevenuePercentage_Estimate: Value(DataCardValue16.Text),
+            EstimatedLostSalesPercentage:Value(DataCardValue27.Text),
+            HistoricalGrossMarginPercentage:Value(DataCardValue33.Text),
+            AchievableEstimatedReductionLostRevenuePercentage:Value(DataCardValue1.Text),
+            ConservativeEstimatedReductionLostRevenuePercentage:Value(DataCardValue20.Text),
+            EstimatedLostRevenue:Value(DataCardValue23.Text),
+            AdressableRevenue:Value(DataCardValue13.Text),
+            GrossProfitImpact:Value(DataCardValue30.Text),
+            AchievableProjectedGrossProfitImpact:Value(DataCardValue12.Text),
+            ConservativeProjectedGrossProfitImpact:Value(DataCardValue24.Text),
+            Average:Value(DataCardValue10.Text)
+            });
             SubmitForm(Form2);
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Patch(Input, Defaults(Input), {LostProfitID:LastInsertedID, BaselineYear:BY, AnnualRevenue:AR});
@@ -32,7 +45,7 @@
                  ),
                 Notify("Changes submitted successfully !", NotificationType.Success);
              );
-            
+            NewForm(Form2);
         PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
@@ -1340,9 +1353,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: |-
-                    =
-                    If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, AchievableEstimatedReductionLostRevenuePercentage), LookUp(DefaultTable, IndustryID = industryid,Achievable))
+                Default: =If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, AchievableEstimatedReductionLostRevenuePercentage), LookUp(DefaultTable, IndustryID = industryid,Achievable))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
