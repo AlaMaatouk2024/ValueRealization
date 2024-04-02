@@ -16,6 +16,12 @@
     "datasets": {
       "valuerealization.database.windows.net,ValueRealization": {
         "dataSources": {
+          "BenefitCategory": {
+            "tableName": "[dbo].[BenefitCategory]"
+          },
+          "Bundle_benefit": {
+            "tableName": "[dbo].[Bundle_benefit]"
+          },
           "Customer": {
             "tableName": "[dbo].[Customer]"
           },
@@ -55,7 +61,9 @@
       "LostProfit",
       "MarkDown",
       "Version",
-      "DefaultTable"
+      "DefaultTable",
+      "Bundle_benefit",
+      "BenefitCategory"
     ],
     "dependencies": {},
     "dependents": [],
