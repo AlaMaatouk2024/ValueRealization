@@ -60,7 +60,6 @@
             );
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Set(inputid, Max(Input, InputID));
-            Patch(Version, Defaults(Version), {CustomerID:customerid, InputID:inputid, VersionNumber:1});
              If(
                  !IsEmpty(Errors(Input)),
                  Notify(
@@ -1700,9 +1699,10 @@
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =155
-        Items: =Filter(Version,'CustomerID'=customerid)
+        Items: =Filter(Version,CustomerID=customerid)
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Width: =1327
         X: =40
         Y: =40
         ZIndex: =13
