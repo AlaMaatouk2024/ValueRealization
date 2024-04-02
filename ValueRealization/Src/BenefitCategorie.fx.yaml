@@ -1,6 +1,7 @@
 "BenefitCategorie As screen.'printableLayout_A4Landscape_ver1.0'":
     Height: =1400
     LoadingSpinnerColor: =RGBA(105, 121, 126, 1)
+    OnVisible: =Set(current_version_color,105)
     Width: =1700
 
     save_2 As button:
@@ -60,6 +61,7 @@
             );
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Set(inputid, Max(Input, InputID));
+            Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
              If(
                  !IsEmpty(Errors(Input)),
                  Notify(
@@ -1712,14 +1714,16 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(105, 121, 126, 1)
+            Fill: =RGBA(current_version_color, 121, 126, 0)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Set(current_version,ThisItem.VersionID);
+                Set(current_version_color,0)
             PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)

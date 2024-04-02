@@ -138,7 +138,7 @@
             =Patch(Customer, Defaults(Customer), {CustomerName:TextInput1.Text,IndustryID: selectedIndustryID});
             Set(customerid, LookUp(Customer, CustomerName = TextInput1.Text, CustomerID));
             Patch(Customer_bundle, Defaults(Customer_bundle), {SolutionBundleID:selectedBundleID,CustomerID:customerid});
-            Patch(Version, Defaults(Version), {CustomerID:customerid,VersionNumber:1});
+            Patch(Version, Defaults(Version), {CustomerID:customerid,VersionNumber:1,InputID:0});
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             
             
