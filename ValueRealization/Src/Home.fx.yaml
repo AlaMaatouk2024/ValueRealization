@@ -69,6 +69,21 @@ Home As screen:
         Y: =123
         ZIndex: =8
 
+    Label9 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: ="Hllo Emna"
+        X: =713
+        Y: =167
+        ZIndex: =13
+
     Group3 As group:
         Height: =5
         Width: =5
