@@ -19,20 +19,47 @@
         OnSelect: |
             =Set(BY,Value(Dropdown1.SelectedText.Value));
             Set(AR, Value(TextInput3.Text));
-            Patch(LostProfit, Defaults(LostProfit), {
-            AdressableRevenuePercentage_Estimate: Value(DataCardValue16.Text),
-            EstimatedLostSalesPercentage:Value(DataCardValue27.Text),
-            HistoricalGrossMarginPercentage:Value(DataCardValue33.Text),
-            AchievableEstimatedReductionLostRevenuePercentage:Value(DataCardValue1.Text),
-            ConservativeEstimatedReductionLostRevenuePercentage:Value(DataCardValue20.Text),
-            EstimatedLostRevenue:Value(DataCardValue23.Text),
-            AdressableRevenue:Value(DataCardValue13.Text),
-            GrossProfitImpact:Value(DataCardValue30.Text),
-            AchievableProjectedGrossProfitImpact:Value(DataCardValue12.Text),
-            ConservativeProjectedGrossProfitImpact:Value(DataCardValue24.Text),
-            Average:Value(DataCardValue10.Text)
-            });
-            SubmitForm(Form2);
+            If(
+                IsEmpty(LookUp(LostProfit, LostProfitID = lostprofitid)),
+                // If record doesn't exist, create a new one
+                Patch(
+                    LostProfit,
+                    Defaults(LostProfit), // Creates a new record
+                    {
+                        AdressableRevenuePercentage_Estimate: Value(DataCardValue16.Text),
+                        EstimatedLostSalesPercentage: Value(DataCardValue27.Text),
+                        HistoricalGrossMarginPercentage: Value(DataCardValue33.Text),
+                        AchievableEstimatedReductionLostRevenuePercentage: Value(DataCardValue1.Text),
+                        ConservativeEstimatedReductionLostRevenuePercentage: Value(DataCardValue20.Text),
+                        EstimatedLostRevenue: Value(DataCardValue23.Text),
+                        AdressableRevenue: Value(DataCardValue13.Text),
+                        GrossProfitImpact: Value(DataCardValue30.Text),
+                        AchievableProjectedGrossProfitImpact: Value(DataCardValue12.Text),
+                        ConservativeProjectedGrossProfitImpact: Value(DataCardValue24.Text),
+                        Average: Value(DataCardValue10.Text)
+                      
+                    }
+                ),
+                // If record exists, update it
+                Patch(
+                    LostProfit,
+                    LookUp(LostProfit, LostProfitID = lostprofitid), // Look up existing record
+                    {
+                        AdressableRevenuePercentage_Estimate: Value(DataCardValue16.Text),
+                        EstimatedLostSalesPercentage: Value(DataCardValue27.Text),
+                        HistoricalGrossMarginPercentage: Value(DataCardValue33.Text),
+                        AchievableEstimatedReductionLostRevenuePercentage: Value(DataCardValue1.Text),
+                        ConservativeEstimatedReductionLostRevenuePercentage: Value(DataCardValue20.Text),
+                        EstimatedLostRevenue: Value(DataCardValue23.Text),
+                        AdressableRevenue: Value(DataCardValue13.Text),
+                        GrossProfitImpact: Value(DataCardValue30.Text),
+                        AchievableProjectedGrossProfitImpact: Value(DataCardValue12.Text),
+                        ConservativeProjectedGrossProfitImpact: Value(DataCardValue24.Text),
+                        Average: Value(DataCardValue10.Text)
+                       
+                    }
+                )
+            );
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Patch(Input, Defaults(Input), {LostProfitID:LastInsertedID, BaselineYear:BY, AnnualRevenue:AR});
             Set(inputid, Max(Input, InputID));
