@@ -19,9 +19,7 @@
         OnSelect: |
             =Set(BY,Value(Dropdown1.SelectedText.Value));
             Set(AR, Value(TextInput3.Text));
-            If(
-                IsEmpty(LookUp(LostProfit, LostProfitID = lostprofitid)),
-                // If record doesn't exist, create a new one
+            If( IsBlank(LookUp(LostProfit,LostProfitID= lostprofitid)),
                 Patch(
                     LostProfit,
                     Defaults(LostProfit), // Creates a new record
