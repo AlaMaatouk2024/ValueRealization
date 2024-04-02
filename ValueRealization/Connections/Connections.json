@@ -1,0 +1,67 @@
+{
+  "513320c5-3d15-4a09-bcac-d9b150ba4119": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "oauth",
+      "displayName": "SQL Server",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1683/1.0.1683.3686/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "valuerealization.database.windows.net,ValueRealization": {
+        "dataSources": {
+          "Customer": {
+            "tableName": "[dbo].[Customer]"
+          },
+          "Customer_bundle": {
+            "tableName": "[dbo].[Customer_bundle]"
+          },
+          "DefaultTable": {
+            "tableName": "[dbo].[DefaultTable]"
+          },
+          "Industry": {
+            "tableName": "[dbo].[Industry]"
+          },
+          "Input": {
+            "tableName": "[dbo].[Input]"
+          },
+          "LostProfit": {
+            "tableName": "[dbo].[LostProfit]"
+          },
+          "MarkDown": {
+            "tableName": "[dbo].[MarkDown]"
+          },
+          "SolutionBundle": {
+            "tableName": "[dbo].[SolutionBundle]"
+          },
+          "Version": {
+            "tableName": "[dbo].[Version]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Customer",
+      "Customer_bundle",
+      "Industry",
+      "SolutionBundle",
+      "Input",
+      "LostProfit",
+      "MarkDown",
+      "Version",
+      "DefaultTable"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "endpoints": [
+      "valuerealization.database.windows.net,ValueRealization"
+    ],
+    "id": "513320c5-3d15-4a09-bcac-d9b150ba4119"
+  }
+}
