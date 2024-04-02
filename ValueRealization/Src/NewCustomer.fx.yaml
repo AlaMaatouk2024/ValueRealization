@@ -150,6 +150,7 @@
             Set(industryid, LookUp(Customer, CustomerID = customerid, IndustryID));
             Set(defaulttable, LookUp(DefaultTable, IndustryID = industryid, IndustrID));
             NewForm(Form2);
+            Patch(Version, Defaults(Version), {CustomerID:customerid,VersionNumber:1});
         PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
