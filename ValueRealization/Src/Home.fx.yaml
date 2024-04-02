@@ -11,11 +11,13 @@ Home As screen:
         Height: =65
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |
+        OnSelect: |-
             =If(Radio2.Selected.Value = "New",Navigate(NewCustomer,ScreenTransition.Fade),Navigate(BenefitCategorie,ScreenTransition.Fade));
             Set(customerid, LookUp(Customer, CustomerName = Dropdown3.SelectedText.Value, CustomerID));
             NewForm(Form2);
-            Set(industryid, 0)
+            Set(industryid, 0);
+            Set(existingvalues,LookUp(Version, CustomerID = customerid, InputID));
+            Set(lostprofitid,LookUp(Input, InputID = existingvalues, LostProfitID))
         Size: =24
         Text: ="Continue"
         Visible: |

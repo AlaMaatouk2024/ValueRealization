@@ -22,6 +22,8 @@
             SubmitForm(Form2);
             Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Patch(Input, Defaults(Input), {LostProfitID:LastInsertedID, BaselineYear:BY, AnnualRevenue:AR});
+            Set(inputid, Max(Input, InputID));
+            Patch(Version, Defaults(Version), {CustomerID:customerid, InputID:inputid, VersionNumber:1});
              If(
                  !IsEmpty(Errors(Input)),
                  Notify(
@@ -102,34 +104,6 @@
         Y: =1322
         ZIndex: =8
 
-    Button3 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(105, 121, 126, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =54
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
-        OnSelect: =NewForm(Form2)
-        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15
-        Text: ="New form"
-        Width: =195
-        X: =530
-        Y: =1322
-        ZIndex: =10
-
     Form2 As form:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =LostProfit
@@ -177,7 +151,7 @@
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
-                Default: ="2024"
+                Default: =If (industryid = 0, LookUp(Input, InputID = existingvalues,BaselineYear), "2024")
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -331,7 +305,7 @@
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =If (industryid = 0,LookUp(DefaultTable, IndustryID = industryid,SuggestedValue) ,LookUp(DefaultTable, IndustryID = industryid,SuggestedValue))
+                Default: =If (industryid = 0, LookUp(Input, InputID = existingvalues,AnnualRevenue), LookUp(DefaultTable, IndustryID = industryid,SuggestedValue))
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -675,7 +649,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =LookUp(DefaultTable, IndustryID = industryid,AddressableRevenue)
+                Default: =If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, AdressableRevenuePercentage_Estimate), LookUp(DefaultTable, IndustryID = industryid,AddressableRevenue))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -904,7 +878,9 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =LookUp(DefaultTable, IndustryID = industryid,LostSales)
+                Default: |-
+                    =
+                    If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, EstimatedLostSalesPercentage), LookUp(DefaultTable, IndustryID = industryid,LostSales))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1133,7 +1109,9 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =LookUp(DefaultTable, IndustryID = industryid,GrossMargin)
+                Default: |-
+                    =
+                    If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, HistoricalGrossMarginPercentage), LookUp(DefaultTable, IndustryID = industryid,GrossMargin))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1362,7 +1340,9 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =LookUp(DefaultTable, IndustryID = industryid,Achievable)
+                Default: |-
+                    =
+                    If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, AchievableEstimatedReductionLostRevenuePercentage), LookUp(DefaultTable, IndustryID = industryid,Achievable))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1591,7 +1571,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =LookUp(DefaultTable, IndustryID = industryid,Conservative)
+                Default: =If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, ConservativeEstimatedReductionLostRevenuePercentage), LookUp(DefaultTable, IndustryID = industryid,Conservative))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
