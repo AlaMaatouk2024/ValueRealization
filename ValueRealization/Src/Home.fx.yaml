@@ -79,7 +79,7 @@ Home As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Size: =13
-        Text: ="Hllo Emna"
+        Text: =
         X: =713
         Y: =167
         ZIndex: =13
@@ -142,19 +142,4 @@ Home As screen:
             X: =40
             Y: =334
             ZIndex: =12
-
-    Label10 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Size: =13
-        Text: ="Hello Ala cava ?"
-        X: =848
-        Y: =317
-        ZIndex: =14
 
