@@ -39,8 +39,10 @@
                       
                     }
                 );
+                
                 Set(LastInsertedID, Max(LostProfit, LostProfitID));
-                Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });,
+                Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
+                Set(current_input, Max(Input, InputID));,
                 // If record exists, update it
                 Patch(
                     LostProfit,
