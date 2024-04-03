@@ -1752,9 +1752,9 @@
         OnSelect: |+
             =
             
-            Set(last_current_customer_version, Max(Filter(Version,CustomerID=CustomerID), VersionNumber));
+            Set(last_current_customer_version, Max(Filter(Version,CustomerID=customerid), VersionNumber));
             Set(inputid, Max(Filter(Input,VersionID=current_version), InputID));
-            Patch(Version, Defaults(Version), {CustomerID:customerid, VersionNumber:last_current_customer_version+1, InputID:inputid});
+            Patch(Version, Defaults(Version), {CustomerID:customerid, VersionNumber:last_current_customer_version+1, InputID:inputid})
             
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
