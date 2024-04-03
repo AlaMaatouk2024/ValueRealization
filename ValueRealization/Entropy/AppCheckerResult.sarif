@@ -14,39 +14,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DisplayName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DisplayName",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
+                  "charLength": 23,
+                  "charOffset": 56,
                   "snippet": {
-                    "text": "DataCardValue2"
+                    "text": "\"AchievableGrossProfit\""
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "DisplayName",
                 "module": "Screen1",
-                "type": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1"
+                "type": "Screen1.Form1.AchievableGrossProfit_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "DataCardValue2"
+              "AchievableGrossProfit"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrColDNE-Name",
           "ruleIndex": 0
         },
         {
@@ -54,69 +54,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DisplayName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DisplayName",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
+                  "charLength": 80,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Value(DataCardValue2.Text)"
+                    "text": "DataSourceInfo([@LostProfit],DataSourceInfo.DisplayName,\"AchievableGrossProfit\")"
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "DisplayName",
                 "module": "Screen1",
-                "type": "Screen1.Form1.AchievableEstimatedReductionDiscounting_DataCard1"
+                "type": "Screen1.Form1.AchievableGrossProfit_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Value"
+              "DataSourceInfo"
             ],
             "id": "issue"
           },
@@ -124,39 +87,39 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.Default"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.Default",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
+                  "charLength": 22,
+                  "charOffset": 8,
                   "snippet": {
-                    "text": "DataCardValue3"
+                    "text": ".AchievableGrossProfit"
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "Default",
                 "module": "Screen1",
-                "type": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2"
+                "type": "Screen1.Form1.AchievableGrossProfit_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "DataCardValue3"
+              "AchievableGrossProfit"
             ],
             "id": "issue"
           },
@@ -164,83 +127,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue3.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AchievableProjectedGrossProfitImpact_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 2
         },
         {
@@ -248,32 +134,112 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DisplayName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DisplayName",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
+                  "charLength": 21,
+                  "charOffset": 56,
                   "snippet": {
-                    "text": "DataCardValue5"
+                    "text": "\"AchievableReduction\""
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "DisplayName",
                 "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1"
+                "type": "Screen1.Form1.AchievableReduction_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "DataCardValue5"
+              "AchievableReduction"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DisplayName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DisplayName",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 78,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataSourceInfo([@LostProfit],DataSourceInfo.DisplayName,\"AchievableReduction\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayName",
+                "module": "Screen1",
+                "type": "Screen1.Form1.AchievableReduction_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSourceInfo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".AchievableReduction"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Screen1",
+                "type": "Screen1.Form1.AchievableReduction_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "AchievableReduction"
             ],
             "id": "issue"
           },
@@ -281,83 +247,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue5.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValueTotal_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 2
         },
         {
@@ -365,32 +254,112 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DisplayName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update",
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DisplayName",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
+                  "charLength": 25,
+                  "charOffset": 56,
                   "snippet": {
-                    "text": "DataCardValue4"
+                    "text": "\"ConservativeGrossProfit\""
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "DisplayName",
                 "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1"
+                "type": "Screen1.Form1.ConservativeGrossProfit_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "DataCardValue4"
+              "ConservativeGrossProfit"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DisplayName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DisplayName",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 82,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataSourceInfo([@LostProfit],DataSourceInfo.DisplayName,\"ConservativeGrossProfit\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayName",
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeGrossProfit_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSourceInfo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 24,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".ConservativeGrossProfit"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeGrossProfit_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ConservativeGrossProfit"
             ],
             "id": "issue"
           },
@@ -398,83 +367,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue4.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.AnnualProductDiscountingValuePercentage_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 2
         },
         {
@@ -482,32 +374,112 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update"
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DisplayName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update",
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DisplayName",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
+                  "charLength": 23,
+                  "charOffset": 56,
                   "snippet": {
-                    "text": "DataCardValue6"
+                    "text": "\"ConservativeReduction\""
                   }
                 }
               },
               "properties": {
-                "member": "Update",
+                "member": "DisplayName",
                 "module": "Screen1",
-                "type": "Screen1.Form1.Average_DataCard2"
+                "type": "Screen1.Form1.ConservativeReduction_DataCard1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "DataCardValue6"
+              "ConservativeReduction"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DisplayName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DisplayName",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 80,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataSourceInfo([@LostProfit],DataSourceInfo.DisplayName,\"ConservativeReduction\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayName",
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeReduction_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSourceInfo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".ConservativeReduction"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeReduction_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ConservativeReduction"
             ],
             "id": "issue"
           },
@@ -515,83 +487,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.Average_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.Average_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue6.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.Average_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 2
         },
         {
@@ -599,66 +494,18 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update",
+                  "fullyQualifiedName": "Screen1",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": "DataCardValue7"
-                  }
                 }
               },
               "properties": {
-                "member": "Update",
                 "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue7"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1"
+                "type": "Screen1"
               }
             }
           ],
@@ -666,303 +513,29 @@
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Low"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue7.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeEstimatedReductionDiscounting_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": "DataCardValue8"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue8"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue8.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.ConservativeProjectedGrossProfitImpact_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": "DataCardValue9"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue9"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Value(DataCardValue9.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DiscountingAttributedOTIFViolations_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Gallery5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Gallery5.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableGrossProfit_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Gallery5"
+                "module": "Screen1",
+                "type": "Screen1.Form1.AchievableGrossProfit_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -973,36 +546,6 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Gallery5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Gallery5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Gallery5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
         },
         {
@@ -1010,19 +553,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.baselineyearcard.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.baselineyearcard.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.AchievableReduction_DataCard1.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.baselineyearcard.Dropdown1"
+                "module": "Screen1",
+                "type": "Screen1.Form1.AchievableReduction_DataCard1.DataCardValue3"
               }
             }
           ],
@@ -1033,26 +576,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.AdressableRevenue_DataCard1.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.AdressableRevenue_DataCard1.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23"
+                "module": "Screen1",
+                "type": "Screen1.Form1.AdressableRevenue_DataCard1.DataCardValue4"
               }
             }
           ],
@@ -1063,26 +606,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.annualrevenuecard.TextInput3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.Adjustment_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.annualrevenuecard.TextInput3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.Adjustment_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.annualrevenuecard.TextInput3"
+                "module": "Screen1",
+                "type": "Screen1.Form1.Adjustment_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -1093,26 +636,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13"
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeGrossProfit_DataCard1.DataCardValue6"
               }
             }
           ],
@@ -1123,26 +666,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.DataCard1.Slider1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.DataCard1.Slider1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.ConservativeReduction_DataCard1.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.DataCard1.Slider1"
+                "module": "Screen1",
+                "type": "Screen1.Form1.ConservativeReduction_DataCard1.DataCardValue7"
               }
             }
           ],
@@ -1153,26 +696,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.EstimatedLostRevenue_DataCard1.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.EstimatedLostRevenue_DataCard1.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30"
+                "module": "Screen1",
+                "type": "Screen1.Form1.EstimatedLostRevenue_DataCard1.DataCardValue8"
               }
             }
           ],
@@ -1183,26 +726,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.GrossProfitImpact_DataCard1.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.GrossProfitImpact_DataCard1.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16"
+                "module": "Screen1",
+                "type": "Screen1.Form1.GrossProfitImpact_DataCard1.DataCardValue9"
               }
             }
           ],
@@ -1213,26 +756,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.BaselineYear.TextInput5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.BaselineYear.TextInput5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12"
+                "module": "Screen1",
+                "type": "Screen1.Form1.BaselineYear.TextInput5"
               }
             }
           ],
@@ -1243,26 +786,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form1.AnnualRevenue.TextInput6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form1.AnnualRevenue.TextInput6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27"
+                "module": "Screen1",
+                "type": "Screen1.Form1.AnnualRevenue.TextInput6"
               }
             }
           ],
@@ -1273,307 +816,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.Radio2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.Radio2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.Radio2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.Dropdown3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.Dropdown3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.Dropdown3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Login.TextInput2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Login.TextInput2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Login",
-                "type": "Login.TextInput2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Login.TextInput2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Login.TextInput2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Login",
-                "type": "Login.TextInput2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1603,7 +846,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1633,7 +876,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1663,55 +906,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1"
+                  "fullyQualifiedName": "Login.TextInput2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolationsPercentage_DataCard1.DataCardValue14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DiscountingAttributedOTIFViolationsPercentage_DataCard1.DataCardValue14.AccessibleLabel",
+                  "fullyQualifiedName": "Login.TextInput2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DiscountingAttributedOTIFViolationsPercentage_DataCard1.DataCardValue14"
+                "module": "Login",
+                "type": "Login.TextInput2"
               }
             }
           ],
@@ -1722,26 +936,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard2.Dropdown2.AccessibleLabel"
+                  "fullyQualifiedName": "Login.TextInput2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard2.Dropdown2.AccessibleLabel",
+                  "fullyQualifiedName": "Login.TextInput2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DataCard2.Dropdown2"
+                "module": "Login",
+                "type": "Login.TextInput2_1"
               }
             }
           ],
@@ -1752,26 +966,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard3.Slider2.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Radio2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard3.Slider2.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Radio2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DataCard3.Slider2"
+                "module": "Home",
+                "type": "Home.Radio2"
               }
             }
           ],
@@ -1782,26 +996,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard3.TextInput4.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Dropdown3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Form1.DataCard3.TextInput4.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Dropdown3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Form1.DataCard3.TextInput4"
+                "module": "Home",
+                "type": "Home.Dropdown3"
               }
             }
           ],
@@ -1812,26 +1026,56 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BenefitCategorie.Icon1.TabIndex"
+                  "fullyQualifiedName": "BenefitCategorie.Gallery5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BenefitCategorie.Icon1.TabIndex",
+                  "fullyQualifiedName": "BenefitCategorie.Gallery5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Gallery5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Gallery5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BenefitCategorie",
-                "type": "BenefitCategorie.Icon1"
+                "type": "BenefitCategorie.Gallery5"
               }
             }
           ],
@@ -1842,7 +1086,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1872,26 +1116,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.inputid"
+                  "fullyQualifiedName": "BenefitCategorie.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.inputid",
+                  "fullyQualifiedName": "BenefitCategorie.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "inputid",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Icon1"
               }
             }
           ],
@@ -1901,25 +1145,475 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.BY"
+                  "fullyQualifiedName": "BenefitCategorie.Form2.baselineyearcard.Dropdown1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.BY",
+                  "fullyQualifiedName": "BenefitCategorie.Form2.baselineyearcard.Dropdown1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "BY",
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.baselineyearcard.Dropdown1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.EstimatedLostRevenue_DataCard2.DataCardValue23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.annualrevenuecard.TextInput3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.annualrevenuecard.TextInput3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.annualrevenuecard.TextInput3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.AdressableRevenue_DataCard2.DataCardValue13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.DataCard1.Slider1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.DataCard1.Slider1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.DataCard1.Slider1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.GrossProfitImpact_DataCard2.DataCardValue30"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.AdressableRevenuePercentage_Estimate_DataCard1.DataCardValue16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.AchievableProjectedGrossProfitImpact_DataCard1.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.EstimatedLostSalesPercentage_DataCard1.DataCardValue27"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.ConservativeProjectedGrossProfitImpact_DataCard1.DataCardValue24"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.HistoricalGrossMarginPercentage_DataCard1.DataCardValue33"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.Average_DataCard1.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.AchievableEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.Adjustment_DataCard2.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BenefitCategorie",
+                "type": "BenefitCategorie.Form2.ConservativeEstimatedReductionLostRevenuePercentage_DataCard1.DataCardValue20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.current_version_color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.current_version_color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "current_version_color",
                 "module": "App",
                 "type": "App"
               }
@@ -1963,36 +1657,6 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.current_version_color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.current_version_color",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "current_version_color",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -2001,27 +1665,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrInvalidName",
+              "id": "app-ErrColDNE-Name",
               "messageStrings": {
                 "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
+                  "text": "The specified column '{0}' does not exist."
                 }
               },
               "properties": {
@@ -2043,6 +1690,40 @@
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "acc-ReadableScreenNameNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Revise screen name"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                ],
+                "level": "Low",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
               }
             },
             {
@@ -2077,23 +1758,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
-              "id": "acc-ReadableScreenNameNeeded",
-              "messageStrings": {
-                "issue": {
-                  "text": "Revise screen name"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
               }
             },
             {
