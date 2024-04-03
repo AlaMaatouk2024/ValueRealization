@@ -68,221 +68,6 @@ Screen1 As screen:
         Y: =40
         ZIndex: =4
 
-        DiscountingAttributedOTIFViolationsPercentage_DataCard1 As typedDataCard.numberEditCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="DiscountingAttributedOTIFViolationsPercentage"
-            Default: =ThisItem.DiscountingAttributedOTIFViolationsPercentage
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@MarkDown],DataSourceInfo.DisplayName,"DiscountingAttributedOTIFViolationsPercentage")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =Value(DataCardValue14.Text)
-            Width: =613
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey14 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                PaddingLeft: =0
-                Size: =13
-                Text: ="Discounting Attributed to OTIF Violations (%)"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue14 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Format: =TextFormat.Number
-                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
-                HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(105, 121, 126, 1)
-                PressedColor: =RGBA(51, 51, 51, 1)
-                PressedFill: =RGBA(255, 255, 255, 1)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
-                ZIndex: =2
-
-            ErrorMessage14 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(168, 0, 0, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
-                ZIndex: =3
-
-            StarVisible14 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =DataCardKey14.Height
-                PaddingLeft: =0
-                Size: =13
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey14.Y
-                ZIndex: =4
-
-        DataCard2 As typedDataCard.blankCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
-            Width: =613
-            X: =1
-            Y: =0
-            ZIndex: =1
-
-            Dropdown2 As dropdown:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                ChevronBackground: =RGBA(255, 255, 255, 1)
-                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(33, 33, 33, 1)
-                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Font: =Font.'Segoe UI'
-                Height: =47
-                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
-                HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(212, 212, 212, 1)
-                Items: =DropDownSample
-                PaddingBottom: =5
-                PaddingLeft: =12
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(105, 121, 126, 1)
-                SelectionFill: =RGBA(105, 121, 126, 1)
-                Size: =13
-                Width: =559
-                X: =30
-                Y: =40
-                ZIndex: =2
-
-        DataCard3 As typedDataCard.blankCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =200
-            Width: =613
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            TextInput4 As text:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                Default: =
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Height: =48
-                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
-                HoverColor: =RGBA(51, 51, 51, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                PressedBorderColor: =RGBA(105, 121, 126, 1)
-                PressedColor: =RGBA(51, 51, 51, 1)
-                PressedFill: =RGBA(255, 255, 255, 1)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Width: =564
-                X: =21
-                Y: =116
-                ZIndex: =2
-
-            Slider2 As slider:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                HandleActiveFill: =RGBA(255, 255, 255, 1)
-                HandleFill: =RGBA(255, 255, 255, 1)
-                HandleHoverFill: =RGBA(255, 255, 255, 1)
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                RailFill: =RGBA(200, 200, 200, 1)
-                RailHoverFill: =ColorFade(RGBA(105, 121, 126, 1), 80%)
-                ValueFill: =RGBA(102, 102, 102, 1)
-                ValueHoverFill: =RGBA(105, 121, 126, 1)
-                Width: =564
-                X: =21
-                Y: =64
-                ZIndex: =3
-
         AchievableEstimatedReductionDiscounting_DataCard2 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -461,6 +246,120 @@ Screen1 As screen:
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
+        DiscountingAttributedOTIFViolationsPercentage_DataCard1 As typedDataCard.numberEditCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DiscountingAttributedOTIFViolationsPercentage"
+            Default: =ThisItem.DiscountingAttributedOTIFViolationsPercentage
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@MarkDown],DataSourceInfo.DisplayName,"DiscountingAttributedOTIFViolationsPercentage")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue14.Text)
+            Width: =613
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                PaddingLeft: =0
+                Size: =13
+                Text: ="Discounting Attributed to OTIF Violations (%)"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue14 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Format: =TextFormat.Number
+                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(105, 121, 126, 1)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue14.Y + DataCardValue14.Height
+                ZIndex: =3
+
+            StarVisible14 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =DataCardKey14.Height
+                PaddingLeft: =0
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey14.Y
+                ZIndex: =4
+
         DiscountingAttributedOTIFViolations_DataCard2 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -575,6 +474,49 @@ Screen1 As screen:
                 Y: =DataCardKey31.Y
                 ZIndex: =4
 
+        DataCard2 As typedDataCard.blankCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =613
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            Dropdown2 As dropdown:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Font: =Font.'Segoe UI'
+                Height: =47
+                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
+                Items: =DropDownSample
+                PaddingBottom: =5
+                PaddingLeft: =12
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(105, 121, 126, 1)
+                SelectionFill: =RGBA(105, 121, 126, 1)
+                Size: =13
+                Width: =559
+                X: =30
+                Y: =40
+                ZIndex: =2
+
         Average_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -688,6 +630,64 @@ Screen1 As screen:
                 Wrap: =false
                 Y: =DataCardKey18.Y
                 ZIndex: =4
+
+        DataCard3 As typedDataCard.blankCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =200
+            Width: =613
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            TextInput4 As text:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =48
+                HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =RGBA(105, 121, 126, 1)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Width: =564
+                X: =21
+                Y: =116
+                ZIndex: =2
+
+            Slider2 As slider:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                HandleActiveFill: =RGBA(255, 255, 255, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                HandleHoverFill: =RGBA(255, 255, 255, 1)
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                RailFill: =RGBA(200, 200, 200, 1)
+                RailHoverFill: =ColorFade(RGBA(105, 121, 126, 1), 80%)
+                ValueFill: =RGBA(102, 102, 102, 1)
+                ValueHoverFill: =RGBA(105, 121, 126, 1)
+                Width: =564
+                X: =21
+                Y: =64
+                ZIndex: =3
 
         ConservativeProjectedGrossProfitImpact_DataCard3 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
