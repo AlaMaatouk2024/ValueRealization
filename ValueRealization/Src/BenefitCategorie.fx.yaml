@@ -38,7 +38,9 @@
                         Average: Value(DataCardValue10.Text)
                       
                     }
-                ),
+                );
+                Set(LastInsertedID, Max(LostProfit, LostProfitID));
+                Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });,
                 // If record exists, update it
                 Patch(
                     LostProfit,
@@ -57,11 +59,12 @@
                         Average: Value(DataCardValue10.Text)
                        
                     }
-                )
-            );
-            Set(LastInsertedID, Max(LostProfit, LostProfitID));
+                );
+                Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Set(inputid, Max(Input, InputID));
             Patch(Input,LookUp(Input,InputID=InputID),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
+            );
+            
              If(
                  !IsEmpty(Errors(Input)),
                  Notify(
