@@ -101,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 14,
+    "BindingErrorCount": 24,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -120,7 +120,7 @@
     "ManualOfflineProfileId": "",
     "Name": "ValueRealizationApp",
     "OriginatingVersion": "1.338",
-    "ParserErrorCount": 1,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {

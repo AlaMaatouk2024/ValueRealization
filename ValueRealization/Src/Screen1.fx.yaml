@@ -101,22 +101,6 @@ Screen1 As screen:
             Y: =0
             ZIndex: =1
 
-        AnnualProductDiscountingValueTotal_DataCard1 As typedDataCard.numberEditCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="AnnualProductDiscountingValueTotal"
-            Default: =ThisItem.AnnualProductDiscountingValueTotal
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@MarkDown],DataSourceInfo.DisplayName,"AnnualProductDiscountingValueTotal")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =Value(DataCardValue5.Text)
-            Width: =613
-            X: =1
-            Y: =1
-            ZIndex: =1
-
         AnnualProductDiscountingValuePercentage_DataCard1 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
@@ -130,6 +114,22 @@ Screen1 As screen:
             Update: =Value(DataCardValue4.Text)
             Width: =613
             X: =0
+            Y: =1
+            ZIndex: =1
+
+        AnnualProductDiscountingValueTotal_DataCard1 As typedDataCard.numberEditCard:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="AnnualProductDiscountingValueTotal"
+            Default: =ThisItem.AnnualProductDiscountingValueTotal
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@MarkDown],DataSourceInfo.DisplayName,"AnnualProductDiscountingValueTotal")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue5.Text)
+            Width: =613
+            X: =1
             Y: =1
             ZIndex: =1
 
