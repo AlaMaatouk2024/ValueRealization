@@ -16,8 +16,9 @@ Home As screen:
             Set(customerid, LookUp(Customer, CustomerName = Dropdown3.SelectedText.Value, CustomerID));
             NewForm(Form2);
             Set(industryid, 0);
-            Set(existingvalues,LookUp(Version, CustomerID = customerid, InputID));
-            Set(lostprofitid,LookUp(Input, InputID = existingvalues, LostProfitID))
+            Set(existingvalues,LookUp(Input, VersionID = current_version, InputID));
+            Set(lostprofitid,LookUp(Input, InputID = existingvalues, LostProfitID));
+            Set(current_version_color,120)
         Size: =24
         Text: ="Continue"
         Visible: |

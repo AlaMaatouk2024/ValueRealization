@@ -1603,17 +1603,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.inputid"
+                  "fullyQualifiedName": "App.current_version_color"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.inputid",
+                  "fullyQualifiedName": "App.current_version_color",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "inputid",
+                "member": "current_version_color",
                 "module": "App",
                 "type": "App"
               }
