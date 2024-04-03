@@ -39,8 +39,10 @@
                       
                     }
                 );
+                
                 Set(LastInsertedID, Max(LostProfit, LostProfitID));
-                Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });,
+                Patch(Input,Defaults(Input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
+                Set(current_input, Max(Input, InputID));,
                 // If record exists, update it
                 Patch(
                     LostProfit,
@@ -1753,13 +1755,14 @@
         HoverColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Add
-        OnSelect: |+
+        OnSelect: |
             =
             
             Set(last_current_customer_version, Max(Filter(Version,CustomerID=customerid), VersionNumber));
             Set(inputid, Max(Filter(Input,VersionID=current_version), InputID));
-            Patch(Version, Defaults(Version), {CustomerID:customerid, VersionNumber:last_current_customer_version+1, InputID:inputid})
-            
+            Patch(Version, Defaults(Version), {CustomerID:customerid, VersionNumber:last_current_customer_version+1, InputID:inputid});
+            Set(c_version, Max(Filter(Version,CustomerID=customerid), VersionID));
+            Patch(Input, Defaults(Input), {VersionID:c_version,AnnualRevenue:LookUp(DefaultTable, IndustryID = industryid,SuggestedValue)})
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
