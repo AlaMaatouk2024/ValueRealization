@@ -62,7 +62,7 @@
                 );
                 Set(LastInsertedID, Max(LostProfit, LostProfitID));
             Set(inputid, Max(Input, InputID));
-            Patch(Input,LookUp(Input,InputID=InputID),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
+            Patch(Input,LookUp(Input,InputID=current_input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
             );
             
              If(
@@ -192,7 +192,7 @@
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =If (industryid = 0, LookUp(Input, InputID = existingvalues,BaselineYear), "2024")
+                Default: =If (industryid = 0, LookUp(Input, InputID = current_input,BaselineYear), "2024")
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -346,7 +346,7 @@
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =If (industryid = 0, LookUp(Input, InputID = existingvalues,AnnualRevenue), LookUp(DefaultTable, IndustryID = industryid,SuggestedValue))
+                Default: =If (industryid = 0, LookUp(Input, InputID = current_input And VersionID = current_version,AnnualRevenue), LookUp(DefaultTable, IndustryID = industryid,SuggestedValue))
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -690,7 +690,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid, AdressableRevenuePercentage_Estimate), LookUp(DefaultTable, IndustryID = industryid,AddressableRevenue))
+                Default: =If (industryid = 0, LookUp(LostProfit, LostProfitID = lostprofitid And InputID = current_input, AdressableRevenuePercentage_Estimate), LookUp(DefaultTable, IndustryID = industryid,AddressableRevenue))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1724,7 +1724,11 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
-            OnSelect: =Set(current_version,ThisItem.VersionID);
+            OnSelect: |+
+                =Set(current_version,ThisItem.VersionID);
+                Set(current_input,LookUp(Version, VersionNumber = ThisItem.VersionNumber And CustomerID = customerid, InputID));
+                Set(lostprofitid,LookUp(Input, InputID = current_input, LostProfitID));
+                
             PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
