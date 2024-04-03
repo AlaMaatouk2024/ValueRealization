@@ -64,7 +64,7 @@
             Set(inputid, Max(Input, InputID));
             Patch(Input,LookUp(Input,InputID=current_input),{AnnualRevenue:Value(TextInput3.Text), LostProfitID: LastInsertedID,VersionID: current_version });
             );
-            
+            Patch(Version,LookUp(Version,VersionID=current_version),{InputID: current_input} );
              If(
                  !IsEmpty(Errors(Input)),
                  Notify(
