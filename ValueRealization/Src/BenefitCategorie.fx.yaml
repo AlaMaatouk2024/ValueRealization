@@ -1762,7 +1762,8 @@
             Set(inputid, Max(Filter(Input,VersionID=current_version), InputID));
             Patch(Version, Defaults(Version), {CustomerID:customerid, VersionNumber:last_current_customer_version+1, InputID:inputid});
             Set(c_version, Max(Filter(Version,CustomerID=customerid), VersionID));
-            Patch(Input, Defaults(Input), {VersionID:c_version,AnnualRevenue:LookUp(DefaultTable, IndustryID = industryid,SuggestedValue)})
+            Set(current_industry,LookUp(Customer, CustomerID = customerid,IndustryID);
+            Patch(Input, Defaults(Input), {VersionID:c_version,AnnualRevenue:LookUp(DefaultTable, IndustryID = current_industry,SuggestedValue)})
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
