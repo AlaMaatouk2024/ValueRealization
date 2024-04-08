@@ -21,7 +21,7 @@
         Y: =188
         ZIndex: =1
 
-    TextInput2 As text:
+    UsernameInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -66,7 +66,7 @@
         Y: =330
         ZIndex: =3
 
-    TextInput2_1 As text:
+    PasswordInput As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -80,6 +80,7 @@
         HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.Password
         PressedBorderColor: =RGBA(105, 121, 126, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
@@ -103,8 +104,20 @@
         Height: =56
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |
-            =If(Radio2.Selected.Value = "New",Navigate(NewCustomer,ScreenTransition.Fade),Navigate(BenefitCategorie,ScreenTransition.Fade));
+        OnSelect: |-
+            =If(
+               !IsBlank(UsernameInput.Text) && !IsBlank(PasswordInput.Text),
+               If(
+                  !IsBlank(
+                     LookUp(
+                        Users,
+                        Username = UsernameInput.Text && Password = PasswordInput.Text
+                     )
+                  ),
+                  Navigate(Home), // Redirect to another screen upon successful login
+                  Notify("Invalid username or password. Please try again.", NotificationType.Error) // Display error message
+               )
+            )
         Size: =24
         Text: ="Connect"
         Visible: |

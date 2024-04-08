@@ -7,10 +7,14 @@
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
+      "CreatedAt": "CreatedAt",
+      "Customer_bundleID": "Customer_bundleID",
       "CustomerID": "CustomerID",
       "InputID": "InputID",
+      "ModifiedAt": "ModifiedAt",
       "VersionID": "VersionID",
-      "VersionNumber": "VersionNumber"
+      "VersionNumber": "VersionNumber",
+      "VersionStatus": "VersionStatus"
     },
     "DatasetName": "valuerealization.database.windows.net,ValueRealization",
     "EncodeDataset": false,
