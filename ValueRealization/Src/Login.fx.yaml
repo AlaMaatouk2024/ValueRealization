@@ -114,8 +114,8 @@
                         Username = UsernameInput.Text && Password = PasswordInput.Text
                      )
                   ),
-                  Navigate(Home), // Redirect to another screen upon successful login
-                  Notify("Invalid username or password. Please try again.", NotificationType.Error) // Display error message
+                  Navigate(Home),
+                  Notify("Invalid username or password. Please try again.", NotificationType.Error)
                )
             )
         Size: =24
