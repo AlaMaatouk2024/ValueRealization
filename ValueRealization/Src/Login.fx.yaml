@@ -101,7 +101,7 @@
         Fill: =RGBA(100, 118, 132, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         FontWeight: =FontWeight.Semibold
-        Height: =56
+        Height: =50
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
@@ -122,8 +122,25 @@
         Text: ="Connect"
         Visible: |
             =true
-        Width: =259
-        X: =356
+        Width: =261
+        X: =355
         Y: =558
         ZIndex: =5
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Italic: =true
+        Size: =17
+        Text: ="Register"
+        Underline: =true
+        X: =441
+        Y: =624
+        ZIndex: =6
 
